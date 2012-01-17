@@ -28,8 +28,12 @@
 {
 	SP_CREATE_POOL(pool);
 
+	//Make use of a root view controller, which became mandatory in iOS5. The completion handler
+	//allows us to separate the view controller setup from the game.
 	mRootViewController = [[RootViewController alloc] initWithMultipleTouchEnabled:false frameRate:60];
 	[mRootViewController setupStageWithCompletionHandler:^(SPStage *stage, NSError *error) {
+		//Create the game class, rotate it to landscape mode
+		//and add it to the stage.
 		Game *game = [[[Game alloc] init] autorelease];
 		game.rotation = PI_HALF;
 		game.x = stage.width;

@@ -25,9 +25,12 @@
 {
 	if((self = [super init]))
 	{
+		//loads the background texture and adds it as a child
 		mBackground = [[SPImage alloc] initWithContentsOfFile:@"background.png"];
 		[self addChild:mBackground];
 
+		//loads the basket, positions in the middle of the ground,
+		//adds a touch listener and adds it as a child
 		mBasket = [[SPImage alloc] initWithContentsOfFile:@"basket.png"];
 		mBasket.pivotX = mBasket.width/2;
 		mBasket.pivotY = mBasket.height/2;
@@ -36,11 +39,17 @@
 		[mBasket addEventListener:@selector(onBasketTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
 		[self addChild:mBasket];
 
+		//initializes the management array for the falling eggs
+		//as well as some informational floats
 		mEggs = [[NSMutableArray alloc] init];
 		mTotalTime = 0;
 		mCreationTimeOfLastEgg = 0;
 		mEggCreationInterval = 1;
 
+		//adds an enter frame listener for the following purposes:
+		//* let the eggs fall
+		//* check for collisions
+		//* create new eggs
 		[self addEventListener:@selector(onEnterFrame:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
 	}
 	return self;
@@ -48,6 +57,7 @@
 
 - (void)dealloc
 {
+	//event listeners must be removed in the dealloc phase
 	[self removeEventListenersAtObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
 	[mBasket removeEventListenersAtObject:self forType:SP_EVENT_TYPE_TOUCH];
 
@@ -66,7 +76,7 @@
 
 	for (SPImage *egg in [[mEggs copy] autorelease])
 	{
-		//move the egg
+		//move and rotate the egg
 		egg.y += fallingDistance;
 		egg.rotation += passedTime;
 
@@ -101,7 +111,9 @@
 		}
 	}
 
-	//create new eggs if necessary
+	//creates new eggs and
+	//positions them right above the visible screen
+	//but randomly distributed on the x-axis
 	mTotalTime += passedTime;
 	if(mTotalTime - mCreationTimeOfLastEgg >= mEggCreationInterval)
 	{

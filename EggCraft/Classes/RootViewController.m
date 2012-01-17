@@ -76,7 +76,7 @@
 	[mWindow bringSubviewToFront:mSparrowView];
 	[mSparrowView start];
 
-	//be nice and put out some info
+	//print some info about the current setup
 	NSLog(@"Setup: Window size is width=%d, height=%d.", (int)mWindow.frame.size.width, (int)mWindow.frame.size.height);
 	NSLog(@"Setup: Sparrow view size is width=%d, height=%d.", (int)mSparrowView.frame.size.width, (int)mSparrowView.frame.size.height);
 	NSLog(@"Setup: Sparrow stage size is width=%d, height=%d.", (int)sparrowStage.width, (int)sparrowStage.height);
