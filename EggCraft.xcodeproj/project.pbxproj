@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3BAD34914BEF19E00E9279E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BAD34814BEF19E00E9279E /* UIKit.framework */; };
+		F3BAD34B14BEF19E00E9279E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BAD34A14BEF19E00E9279E /* Foundation.framework */; };
+		F3BAD34D14BEF19E00E9279E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BAD34C14BEF19E00E9279E /* CoreGraphics.framework */; };
+		F3D51EF814C556EA00F3241E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D51EF414C556EA00F3241E /* background.png */; };
+		F3D51EF914C556EA00F3241E /* basket.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D51EF514C556EA00F3241E /* basket.png */; };
+		F3D51EFA14C556EA00F3241E /* egg.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D51EF614C556EA00F3241E /* egg.png */; };
+		F3D51EFB14C556EA00F3241E /* yolk.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D51EF714C556EA00F3241E /* yolk.png */; };
+		F3D51F0414C5571F00F3241E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D51EFE14C5571F00F3241E /* AppDelegate.m */; };
+		F3D51F0514C5571F00F3241E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D51F0014C5571F00F3241E /* Game.m */; };
+		F3D51F0614C5571F00F3241E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D51F0114C5571F00F3241E /* main.m */; };
+		F3D51F0714C5571F00F3241E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D51F0314C5571F00F3241E /* RootViewController.m */; };
+		F3E1F9D814BF105000C74C02 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9D414BF105000C74C02 /* AudioToolbox.framework */; };
+		F3E1F9D914BF105000C74C02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9D514BF105000C74C02 /* AVFoundation.framework */; };
+		F3E1F9DA14BF105000C74C02 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9D614BF105000C74C02 /* OpenAL.framework */; };
+		F3E1F9DB14BF105000C74C02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9D714BF105000C74C02 /* OpenGLES.framework */; };
+		F3E1F9DE14BF11DD00C74C02 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9DD14BF11DD00C74C02 /* libz.dylib */; };
+		F3E1F9E014BF124F00C74C02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9DF14BF124F00C74C02 /* QuartzCore.framework */; };
+		F3F0500514C476AC003127AB /* libSparrow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F0500414C476AC003127AB /* libSparrow.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3AAC91614C47AB400B54BB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F04FF814C4766D003127AB /* Sparrow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEFE4BC2101B317600E22471;
+			remoteInfo = Sparrow;
+		};
+		F3AAC91814C47AB400B54BB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F04FF814C4766D003127AB /* Sparrow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEEA9335101E32A30071DD21;
+			remoteInfo = UnitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3BAD34414BEF19E00E9279E /* EggCraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BAD34814BEF19E00E9279E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3BAD34A14BEF19E00E9279E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3BAD34C14BEF19E00E9279E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3D51EF414C556EA00F3241E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = EggCraft/Textures/background.png; sourceTree = "<group>"; };
+		F3D51EF514C556EA00F3241E /* basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basket.png; path = EggCraft/Textures/basket.png; sourceTree = "<group>"; };
+		F3D51EF614C556EA00F3241E /* egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = egg.png; path = EggCraft/Textures/egg.png; sourceTree = "<group>"; };
+		F3D51EF714C556EA00F3241E /* yolk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yolk.png; path = EggCraft/Textures/yolk.png; sourceTree = "<group>"; };
+		F3D51EFD14C5571F00F3241E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3D51EFE14C5571F00F3241E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3D51EFF14C5571F00F3241E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		F3D51F0014C5571F00F3241E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		F3D51F0114C5571F00F3241E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3D51F0214C5571F00F3241E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F3D51F0314C5571F00F3241E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F3E0D54314C471DC00B99DD4 /* EggCraft-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EggCraft-Info.plist"; sourceTree = "<group>"; };
+		F3E0D54414C471DC00B99DD4 /* EggCraft-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EggCraft-Prefix.pch"; sourceTree = "<group>"; };
+		F3E1F9D414BF105000C74C02 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F3E1F9D514BF105000C74C02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F3E1F9D614BF105000C74C02 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		F3E1F9D714BF105000C74C02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F3E1F9DD14BF11DD00C74C02 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F3E1F9DF14BF124F00C74C02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3F04FF814C4766D003127AB /* Sparrow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Sparrow.xcodeproj; sourceTree = SPARROW_SRC; };
+		F3F0500414C476AC003127AB /* libSparrow.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSparrow.a; path = "../XcodeBuilds/Release-iphoneos/libSparrow.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3BAD34114BEF19E00E9279E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F0500514C476AC003127AB /* libSparrow.a in Frameworks */,
+				F3E1F9E014BF124F00C74C02 /* QuartzCore.framework in Frameworks */,
+				F3E1F9DE14BF11DD00C74C02 /* libz.dylib in Frameworks */,
+				F3E1F9D814BF105000C74C02 /* AudioToolbox.framework in Frameworks */,
+				F3E1F9D914BF105000C74C02 /* AVFoundation.framework in Frameworks */,
+				F3E1F9DA14BF105000C74C02 /* OpenAL.framework in Frameworks */,
+				F3E1F9DB14BF105000C74C02 /* OpenGLES.framework in Frameworks */,
+				F3BAD34914BEF19E00E9279E /* UIKit.framework in Frameworks */,
+				F3BAD34B14BEF19E00E9279E /* Foundation.framework in Frameworks */,
+				F3BAD34D14BEF19E00E9279E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3AAC91214C47AB400B54BB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3AAC91714C47AB400B54BB8 /* libSparrow.a */,
+				F3AAC91914C47AB400B54BB8 /* UnitTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3BAD33914BEF19E00E9279E = {
+			isa = PBXGroup;
+			children = (
+				F3F04FF814C4766D003127AB /* Sparrow.xcodeproj */,
+				F3E0D53D14C471DC00B99DD4 /* EggCraft */,
+				F3BAD34714BEF19E00E9279E /* Frameworks */,
+				F3BAD34514BEF19E00E9279E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3BAD34514BEF19E00E9279E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3BAD34414BEF19E00E9279E /* EggCraft.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3BAD34714BEF19E00E9279E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F0500414C476AC003127AB /* libSparrow.a */,
+				F3E1F9DD14BF11DD00C74C02 /* libz.dylib */,
+				F3E1F9DF14BF124F00C74C02 /* QuartzCore.framework */,
+				F3E1F9D414BF105000C74C02 /* AudioToolbox.framework */,
+				F3E1F9D514BF105000C74C02 /* AVFoundation.framework */,
+				F3E1F9D614BF105000C74C02 /* OpenAL.framework */,
+				F3E1F9D714BF105000C74C02 /* OpenGLES.framework */,
+				F3BAD34814BEF19E00E9279E /* UIKit.framework */,
+				F3BAD34A14BEF19E00E9279E /* Foundation.framework */,
+				F3BAD34C14BEF19E00E9279E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3D51EFC14C5571F00F3241E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F3D51F0114C5571F00F3241E /* main.m */,
+				F3D51EFD14C5571F00F3241E /* AppDelegate.h */,
+				F3D51EFE14C5571F00F3241E /* AppDelegate.m */,
+				F3D51F0214C5571F00F3241E /* RootViewController.h */,
+				F3D51F0314C5571F00F3241E /* RootViewController.m */,
+				F3D51EFF14C5571F00F3241E /* Game.h */,
+				F3D51F0014C5571F00F3241E /* Game.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F3E0D53D14C471DC00B99DD4 /* EggCraft */ = {
+			isa = PBXGroup;
+			children = (
+				F3D51EFC14C5571F00F3241E /* Classes */,
+				F3E0D62814C471F800B99DD4 /* Textures */,
+				F3E0D54314C471DC00B99DD4 /* EggCraft-Info.plist */,
+				F3E0D54414C471DC00B99DD4 /* EggCraft-Prefix.pch */,
+			);
+			path = EggCraft;
+			sourceTree = "<group>";
+		};
+		F3E0D62814C471F800B99DD4 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				F3D51EF414C556EA00F3241E /* background.png */,
+				F3D51EF514C556EA00F3241E /* basket.png */,
+				F3D51EF614C556EA00F3241E /* egg.png */,
+				F3D51EF714C556EA00F3241E /* yolk.png */,
+			);
+			name = Textures;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3BAD34314BEF19E00E9279E /* EggCraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3BAD35C14BEF19E00E9279E /* Build configuration list for PBXNativeTarget "EggCraft" */;
+			buildPhases = (
+				F3BAD34014BEF19E00E9279E /* Sources */,
+				F3BAD34114BEF19E00E9279E /* Frameworks */,
+				F3BAD34214BEF19E00E9279E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EggCraft;
+			productName = HamAndEggs;
+			productReference = F3BAD34414BEF19E00E9279E /* EggCraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3BAD33B14BEF19E00E9279E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F3BAD33E14BEF19E00E9279E /* Build configuration list for PBXProject "EggCraft" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3BAD33914BEF19E00E9279E;
+			productRefGroup = F3BAD34514BEF19E00E9279E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F3AAC91214C47AB400B54BB8 /* Products */;
+					ProjectRef = F3F04FF814C4766D003127AB /* Sparrow.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F3BAD34314BEF19E00E9279E /* EggCraft */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F3AAC91714C47AB400B54BB8 /* libSparrow.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSparrow.a;
+			remoteRef = F3AAC91614C47AB400B54BB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3AAC91914C47AB400B54BB8 /* UnitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTest.octest;
+			remoteRef = F3AAC91814C47AB400B54BB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3BAD34214BEF19E00E9279E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D51EF814C556EA00F3241E /* background.png in Resources */,
+				F3D51EF914C556EA00F3241E /* basket.png in Resources */,
+				F3D51EFA14C556EA00F3241E /* egg.png in Resources */,
+				F3D51EFB14C556EA00F3241E /* yolk.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3BAD34014BEF19E00E9279E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D51F0414C5571F00F3241E /* AppDelegate.m in Sources */,
+				F3D51F0514C5571F00F3241E /* Game.m in Sources */,
+				F3D51F0614C5571F00F3241E /* main.m in Sources */,
+				F3D51F0714C5571F00F3241E /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3BAD35A14BEF19E00E9279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Holger Weissboeck (TB7W9V6HER)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "6AC8FC92-5AEF-4523-8A4C-0E4D5ECA2F4F";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SPARROW_SRC}/**";
+			};
+			name = Debug;
+		};
+		F3BAD35B14BEF19E00E9279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Holger Weissboeck (TB7W9V6HER)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "6AC8FC92-5AEF-4523-8A4C-0E4D5ECA2F4F";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SPARROW_SRC}/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3BAD35D14BEF19E00E9279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EggCraft/EggCraft-Prefix.pch";
+				INFOPLIST_FILE = "EggCraft/EggCraft-Info.plist";
+				PRODUCT_NAME = EggCraft;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3BAD35E14BEF19E00E9279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EggCraft/EggCraft-Prefix.pch";
+				INFOPLIST_FILE = "EggCraft/EggCraft-Info.plist";
+				PRODUCT_NAME = EggCraft;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3BAD33E14BEF19E00E9279E /* Build configuration list for PBXProject "EggCraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BAD35A14BEF19E00E9279E /* Debug */,
+				F3BAD35B14BEF19E00E9279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3BAD35C14BEF19E00E9279E /* Build configuration list for PBXNativeTarget "EggCraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BAD35D14BEF19E00E9279E /* Debug */,
+				F3BAD35E14BEF19E00E9279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3BAD33B14BEF19E00E9279E /* Project object */;
+}
