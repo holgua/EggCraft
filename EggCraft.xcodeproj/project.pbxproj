@@ -18,6 +18,7 @@
 		F3D51F0514C5571F00F3241E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D51F0014C5571F00F3241E /* Game.m */; };
 		F3D51F0614C5571F00F3241E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D51F0114C5571F00F3241E /* main.m */; };
 		F3D51F0714C5571F00F3241E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D51F0314C5571F00F3241E /* RootViewController.m */; };
+		F3D51F0914C5593500F3241E /* README in Resources */ = {isa = PBXBuildFile; fileRef = F3D51F0814C5593500F3241E /* README */; };
 		F3E1F9D814BF105000C74C02 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9D414BF105000C74C02 /* AudioToolbox.framework */; };
 		F3E1F9D914BF105000C74C02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9D514BF105000C74C02 /* AVFoundation.framework */; };
 		F3E1F9DA14BF105000C74C02 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E1F9D614BF105000C74C02 /* OpenAL.framework */; };
@@ -60,6 +61,7 @@
 		F3D51F0114C5571F00F3241E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3D51F0214C5571F00F3241E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F3D51F0314C5571F00F3241E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F3D51F0814C5593500F3241E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 		F3E0D54314C471DC00B99DD4 /* EggCraft-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EggCraft-Info.plist"; sourceTree = "<group>"; };
 		F3E0D54414C471DC00B99DD4 /* EggCraft-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EggCraft-Prefix.pch"; sourceTree = "<group>"; };
 		F3E1F9D414BF105000C74C02 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -158,6 +160,7 @@
 				F3E0D62814C471F800B99DD4 /* Textures */,
 				F3E0D54314C471DC00B99DD4 /* EggCraft-Info.plist */,
 				F3E0D54414C471DC00B99DD4 /* EggCraft-Prefix.pch */,
+				F3D51F0814C5593500F3241E /* README */,
 			);
 			path = EggCraft;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				F3D51EF914C556EA00F3241E /* basket.png in Resources */,
 				F3D51EFA14C556EA00F3241E /* egg.png in Resources */,
 				F3D51EFB14C556EA00F3241E /* yolk.png in Resources */,
+				F3D51F0914C5593500F3241E /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
