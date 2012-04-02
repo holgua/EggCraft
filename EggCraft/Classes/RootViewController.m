@@ -58,7 +58,6 @@
 
 	//init stage environment
 	[SPStage setSupportHighResolutions:mSupportHighResolutions];
-	[SPStage setContentScaleFactor:mContentScaleFactor];
 
 	//create sparrow stage
 	SPStage *sparrowStage = [[[SPStage alloc] initWithWidth:mStageSize.width height:mStageSize.height] autorelease];
